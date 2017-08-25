@@ -1,0 +1,16 @@
+print 'Введите коэффициент a: '
+a = gets.to_f
+print 'Введите коэффициент b: '
+b = gets.to_f
+print 'Введите коэффициент c: '
+b = gets.to_f
+d = b**2 - 4*a*c
+if d < 0
+  puts "Корней нет! D = #{d}" 
+elsif d == 0
+  x1 = (b*-1) / (2 * a)
+  puts "Один корень, X = #{x1}, D = #{d}"
+else 
+  x1 = (b*-1 + Math.sqrt(d)) / (2 * a)
+  x2 = (b*-1 + Math.sqrt(d)) / (2 * a)
+  puts "Два корня, X1 = #{x1}, X2 = #{x2}, D = #{d}"
